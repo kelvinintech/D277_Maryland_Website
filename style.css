@@ -3,15 +3,16 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 10px;
-  background-image: linear-gradient(red, yellow);
+  background-image: linear-gradient(#f59590, #f1f2bf);
 }
 
 #main-header {
   text-align: center;
-  border-bottom: 2px solid salmon;
 }
 
 nav {
@@ -29,24 +30,39 @@ nav ul li {
   background-color: none;
 }
 
-nav a:hover {
-  background-color: #ff0000;
+nav a {
   color: #fff;
+  padding: 10px;
 }
+
+nav a:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+/* nav a:visited {
+} */
 
 img {
   width: 20rem;
   height: 20rem;
   float: right;
+  border-radius: 30%;
 }
 
 aside {
   position: relative;
-  top: 5px;
+  top: 0px;
   right: 15px;
 }
 
 .content-section {
   border: 2px solid black;
   padding: 15px;
+}
+
+.fun-fact {
+  position: absolute;
+  top: -20px;
+  font-style: italic;
 }
