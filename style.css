@@ -5,12 +5,18 @@
 body {
   align-items: center;
   justify-content: center;
+  padding: 10px;
+  background-image: linear-gradient(red, yellow);
+}
+
+#main-header {
+  text-align: center;
+  border-bottom: 2px solid salmon;
 }
 
 nav {
-  position: absolute;
-  top: 0;
-  transform: translateX(50%);
+  justify-content: center;
+  display: flex;
   padding: 30px;
 }
 nav ul li {
@@ -38,4 +44,9 @@ aside {
   position: relative;
   top: 5px;
   right: 15px;
+}
+
+.content-section {
+  border: 2px solid black;
+  padding: 15px;
 }
