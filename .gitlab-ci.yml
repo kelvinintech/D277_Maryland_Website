@@ -1,3 +1,12 @@
+image: ruby:3.2
+
+pages:
+  script:
+    - mkdir public
+    - find . -mindepth 1 ! -name public -exec cp -r {} public/ \; # Use cp and find to exclude public directory
+  artifacts:
+    paths:
+      - public
 # image: ruby:3.2
 
 # pages:
@@ -8,12 +17,4 @@
 #     paths:
 #       - public
 
-image: ruby:3.2
-
-pages:
-  script:
-    - mkdir public
-    - rsync -av --exclude='public' . public # Use rsync to avoid copying the public directory into itself
-  artifacts:
-    paths:
-      - public
+# image: ruby:3.2
