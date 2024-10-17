@@ -1,3 +1,5 @@
+// completed task2E: Javascript code for web form
+
 document.querySelector("form").addEventListener("submit", function (event) {
   var email = document.getElementById("email").value;
   var confirmEmail = document.getElementById("confirm-email").value;
