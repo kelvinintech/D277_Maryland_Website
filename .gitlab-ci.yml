@@ -6,4 +6,4 @@ pages:
     - cp -r * public
   artifacts:
     paths:
-      - working # - public
+      - public
