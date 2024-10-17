@@ -1,9 +1,19 @@
+# image: ruby:3.2
+
+# pages:
+#   script:
+#     - mkdir public
+#     - cp -r * public
+#   artifacts:
+#     paths:
+#       - public
+
 image: ruby:3.2
 
 pages:
   script:
     - mkdir public
-    - cp -r * public
+    - rsync -av --exclude='public' . public # Use rsync to avoid copying the public directory into itself
   artifacts:
     paths:
       - public
